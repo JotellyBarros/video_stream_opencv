@@ -3,9 +3,9 @@
    <!-- launch video stream -->
    <include file="$(find video_stream_opencv)/launch/camera.launch" >
    		<!-- node name and ros graph name -->
-	  	<arg name="camera_name" value="webcam" />
+	  	<arg name="camera_name" value="camera" />
 	  	<!-- means video device 0, /dev/video0 -->
-	  	<arg name="video_stream_provider" value="0" />
+	  	<arg name="video_stream_provider" value="1" />
 	  	<!-- set camera fps to (if the device allows) -->
 	  	<arg name="set_camera_fps" value="30"/>
       	<!-- set buffer queue size of frame capturing to (1 means we want the latest frame only) -->

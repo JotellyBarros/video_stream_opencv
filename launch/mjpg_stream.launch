@@ -12,6 +12,8 @@
       	<arg name="buffer_queue_size" value="100" />
 	  	<!-- throttling the querying of frames to -->
 	  	<arg name="fps" value="30" />
+		<arg name="width" default="1280"/>
+		<arg name="height" default="720"/>
 	  	<!-- setting frame_id -->
 	  	<arg name="frame_id" value="axis_optical_frame" />
 	  	<!-- camera info loading, take care as it needs the "file:///" at the start , e.g.:
