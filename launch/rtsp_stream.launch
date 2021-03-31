@@ -5,19 +5,20 @@
    		<!-- node name and ros graph name -->
 	  	<arg name="camera_name" value="camera" />
 	  	<!-- url of the video stream -->
-	  	<arg name="video_stream_provider" value="http://192.168.25.1:8080/?action=stream" />
+	  	<!-- <arg name="video_stream_provider" value="http://192.168.25.1:8080/?action=stream" /> -->
+	  	<arg name="video_stream_provider" value="http://admin:MTIzNDU=@192.168.0.10:8080/stream/getvideo" />  	
 	  	<!-- set camera fps to (does nothing on a stream)-->
-	  	<arg name="set_camera_fps" value="30"/>
+	  	<arg name="set_camera_fps" value="25"/>
       	<!-- set buffer queue size of frame capturing to -->
       	<arg name="buffer_queue_size" value="1000" />
 	  	<!-- throttling the querying of frames to -->
-	  	<arg name="fps" value="30" />
-		<!-- <arg name="width" default="1280"/>
-		 <arg name="height" default="720"/> -->
+	  	<arg name="fps" value="25" />
+		<arg name="width" default="640"/>
+		<arg name="height" default="480"/>
 	  	<!-- setting frame_id -->
 	  	<arg name="frame_id" value="rtsp_frame" />
 	  	<!-- camera info loading, take care as it needs the "file:///" at the start , e.g.:-->
-		<!-- <arg name="camera_info_url" value="file:///$(find video_stream_opencv)/config/zenfone_4_mono.yaml"/> -->
+        <arg name="camera_info_url" value="file:///$(find video_stream_opencv)/config/TpLink_NC200.yaml"/>
 	  	<!-- flip the image horizontally (mirror it) -->
 	  	<arg name="flip_horizontal" value="false" />
 	  	<!-- flip the image vertically -->
